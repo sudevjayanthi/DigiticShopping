@@ -1,0 +1,78 @@
+
+
+body {
+  padding: 70px;
+}
+
+.container {
+  margin-top: 70px;
+  border-color: black;
+}
+
+.card {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #00ff2add;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00ff2add;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+span.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+/* Optional: Add a subtle background color to invalid fields */
+.ng-invalid.ng-touched {
+  background-color: #ffeeee;
+}
+.product img{
+  width: 64px;
+}
+.product{
+  margin: 0px 15px;
+  text-align: center;
+}

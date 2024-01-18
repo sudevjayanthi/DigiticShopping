@@ -1,0 +1,26 @@
+<div class="container-fluid p-2">
+    <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: darkblue;">
+        <div class="container-fluid d-flex justify-content-between align-items-center" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand fs-3 ms-5" href="#" style="color: white;">Digitic...</a>
+            <div class="input-group  w-50">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass text-primary"></i></span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+              <i class="fa-solid fa-rotate fs-1 text-light ms-5 me-3 "></i>
+              <h5 style="color: white;">Compare<br>products</h5>
+              <i class="fa-solid fa-user-plus fs-1 text-light ms-5 me-3"></i>
+              <a style="color: white;font-size: 25px;" (click)="signup()">Sign Up</a>
+              <i class="fa-regular fa-user fs-1 text-light ms-5 me-3"></i>
+              <a routerLink="signup" style="color: white;font-size: 25px;" (click)="login()">Login</a>
+              <i class="fa-solid fa-cart-plus fs-1 text-light ms-5 me-3"></i>
+              <h5 style="color: white;">Add<br>Cart</h5>
+              </div>
+          </div>         
+        </div>
+      </nav>
+</div>
