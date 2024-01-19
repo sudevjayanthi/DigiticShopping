@@ -16,6 +16,7 @@ import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './component/header/header.component';
 import { CartComponent } from './component/cart/cart.component';
 import { ProductComponent } from './component/product/product.component';
+import { OffersComponent } from './offers/offers.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { ProductComponent } from './component/product/product.component';
     RegisterComponent,
     HeaderComponent,
     CartComponent,
-    ProductComponent
+    ProductComponent,
+    OffersComponent
   ],
   imports: [
     BrowserModule,
