@@ -39,4 +39,36 @@ export class OffersComponent {
     price:"1,200/-"
 }
 ]
+card=[
+  {
+    image:"assets/kayal/saree.jpg",
+    details:"bjmbnfv",
+    price:"1,200/-" 
+  },
+  {
+    image:"assets/kayal/watch1-removebg-preview.png",
+    details:"bjmbnfv",
+    price:"1,200/-"
+  },
+  {
+    image:"assets/kayal/airpods-removebg-preview.png",
+    details:"bjmbnfv",
+    price:"1,200/-"
+  },
+  {
+    image:"assets/kayal/laptop-removebg-preview.png",
+    details:"vjk.",
+    price:"70,000/-"
+  },
+  {
+    image:"assets/kayal/laptop-removebg-preview.png",
+    details:"vjk.",
+    price:"70,000/-"
+  },
+  {
+    image:"assets/kayal/laptop-removebg-preview.png",
+    details:"vjk.",
+    price:"70,000/-"
+  }
+]
 }

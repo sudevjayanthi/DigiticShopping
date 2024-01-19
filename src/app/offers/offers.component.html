@@ -2,13 +2,13 @@
   <h3>Best Deals</h3>
 </div>
 
-<div id="carouselExampleSlidesOnly"  class="carousel carousel-dark slide ms-5" data-bs-ride="carousel">
-  <div class="carousel-inner" >
+<div id="carouselExampleSlidesOnly" class="carousel carousel-dark slide ms-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper d-flex justify-content-center">
-        <div *ngFor="let o of offer" class="card" style="width: 18rem;">
-          <img [src]="o.image" class="card-img-center w-100 h-50">
-          <div class="card-body mt-5 " style="margin-bottom: -200px;">
+        <div *ngFor="let o of offer" class="card p-3 rounded-4" style="width: 16rem;">
+          <img [src]="o.image" class="card-img-center w-100 h-50" alt="{{o.details}}">
+          <div class="card-body mt-3" style="margin-bottom: -170px;">
             <p class="card-title">{{o.details}}</p>
             <h5 class="card-text">{{o.price}}</h5>
             <a href="#" class="btn btn-primary">Buy Now</a>
@@ -19,11 +19,11 @@
 
     <div class="carousel-item">
       <div class="cards-wrapper d-flex justify-content-center">
-        <div *ngFor="let o of offer" class="card" style="width: 18rem;">
-          <img [src]="o.image" class="card-img-center w-100 h-50">
-          <div class="card-body mt-5" style="margin-bottom: -200px;">
-            <p class="card-title">{{o.details}}</p>
-            <h5 class="card-text">{{o.price}}</h5>
+        <div *ngFor="let c of card" class="card p-3 rounded-4" style="width: 16rem;">
+          <img [src]="c.image" class="card-img-center w-100 h-50" alt="{{c.details}}">
+          <div class="card-body mt-3" style="margin-bottom: -100px;">
+            <p class="card-title">{{c.details}}</p>
+            <h5 class="card-text">{{c.price}}</h5>
             <a href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
