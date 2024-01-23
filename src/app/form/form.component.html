@@ -1,0 +1,100 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="container">
+        <div *ngIf="product">
+          <img style="height: 300px; width: 300px;" src="{{product.image}}" alt="">
+          <h5 style="white-space: nowrap;overflow: hidden;text-overflow:ellipsis;max-width: 100ch;"><strong>Title:  </strong>{{product.title}}</h5>
+          <p style="white-space: nowrap;overflow: hidden;text-overflow:ellipsis;max-width: 100ch;"> <strong>{{product.description}}</strong></p>
+          <p><strong>Price:</strong>${{product.price}}</p>
+        </div>
+        <div *ngIf="!product">
+          <p>Loading...</p>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h2>Place Your Order</h2>
+              </div>
+              <div class="card-body">
+                <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" formControlName="name" class="form-control" placeholder="Enter your name">
+                    <span *ngIf="orderForm.get('name')?.invalid && orderForm.get('name')?.touched">
+                      <span style="color: red;" *ngIf="orderForm.get('name')?.errors?.['required']">
+                        *Name is required
+                      </span>
+                      <span style="color: red;" *ngIf="orderForm.get('name')?.errors?.['maxlength']">
+                        *Maximum 10 Characters required
+                      </span>
+                    </span>
+                  </div>
+                  <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" formControlName="quantity" class="form-control" placeholder="Enter quantity">
+                    <span *ngIf="orderForm.get('quantity')?.invalid && orderForm.get('quantity')?.touched">
+                      <span style="color: red;" *ngIf="orderForm.get('quantity')?.errors?.['required']">
+                        *Quantity is required
+                      </span>
+                    </span>
+                  </div>
+                  <div class="form-group">
+                    <label for="size">Size:</label>
+                    <input type="text" formControlName="size" class="form-control" placeholder="Enter size">
+                    <span *ngIf="orderForm.get('size')?.invalid && orderForm.get('size')?.touched">
+                      <span style="color: red;" *ngIf="orderForm.get('size')?.errors?.['required']">
+                        *Size is required
+                      </span>
+                    </span>
+                  </div>
+                  <div class="form-group">
+                    <label for="color">Color:</label>
+                    <input type="text" formControlName="color" class="form-control" placeholder="Enter color">
+                    <span *ngIf="orderForm.get('color')?.invalid && orderForm.get('color')?.touched">
+                      <span style="color: red;" *ngIf="orderForm.get('color')?.errors?.['required']">
+                        *Color is required
+                      </span>
+                    </span>
+                  </div>
+                  <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea formControlName="address" class="form-control" rows="3" placeholder="Enter your address"></textarea>
+                    <span *ngIf="orderForm.get('address')?.invalid && orderForm.get('address')?.touched">
+                      <span style="color: red;" *ngIf="orderForm.get('address')?.errors?.['required']">
+                        *Address is required
+                      </span>
+                    </span>
+                  </div>
+                  <div class="form-group">
+                    <label for="payment">Payment Method:</label>
+                    <select formControlName="payment" class="form-control">
+                      <option value="Credit Card">Credit Card</option>
+                      <option value="PayPal">PayPal</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
