@@ -8,6 +8,13 @@ import { LoginComponent } from './login/login.component';
 import { ProductComponent } from './component/product/product.component';
 import { CartComponent } from './component/cart/cart.component';
 import { RegisterComponent } from './register/register.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { TvComponent } from './tv/tv.component';
+import { ApplianceComponent } from './appliance/appliance.component';
+import { SportsComponent } from './sports/sports.component';
+import { FashionComponent } from './fashion/fashion.component';
+import { BeautyComponent } from './beauty/beauty.component';
+import { FurnictureComponent } from './furnicture/furnicture.component';
 
 const routes: Routes = [
   {path:'back',component:ImageComponent},
@@ -18,7 +25,14 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
 {path:'cart',component:CartComponent},
 {path:'product',component:ProductComponent},
-{path:'register',component:RegisterComponent}
+{path:'register',component:RegisterComponent},
+{path:'mobile',component:MobileComponent},
+{path:'tv',component:TvComponent},
+{path:'appliance',component:ApplianceComponent},
+{path:'sports',component:SportsComponent},
+{path:'fashion',component:FashionComponent},
+{path:'beauty',component:BeautyComponent},
+{path:'furnicture',component:FurnictureComponent}
 
 ];
 

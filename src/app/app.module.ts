@@ -16,6 +16,13 @@ import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './component/header/header.component';
 import { CartComponent } from './component/cart/cart.component';
 import { ProductComponent } from './component/product/product.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { TvComponent } from './tv/tv.component';
+import { ApplianceComponent } from './appliance/appliance.component';
+import { SportsComponent } from './sports/sports.component';
+import { FashionComponent } from './fashion/fashion.component';
+import { BeautyComponent } from './beauty/beauty.component';
+import { FurnictureComponent } from './furnicture/furnicture.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +35,15 @@ import { ProductComponent } from './component/product/product.component';
     RegisterComponent,
     HeaderComponent,
     CartComponent,
-    ProductComponent
+    ProductComponent,
+    MobileComponent,
+    TvComponent,
+    ApplianceComponent,
+    
+    SportsComponent,
+         FashionComponent,
+         BeautyComponent,
+         FurnictureComponent
   ],
   imports: [
     BrowserModule,

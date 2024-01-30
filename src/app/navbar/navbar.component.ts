@@ -15,6 +15,7 @@ constructor(private route:Router){}
   signup(){
     this.route.navigate(['register']);
   }
+  
 
 
 }
